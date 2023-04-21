@@ -16,5 +16,14 @@ public class IOSBasicsTest extends BaseTest{
                 "**/XCUIElementTypeCell"))
                 .sendKeys("Hello World");
         driver.findElement(AppiumBy.accessibilityId("OK")).click();
+
+        driver.findElement(AppiumBy.iOSNsPredicateString(
+                "value == 'Confirm / Cancel' AND type == 'XCUIElementTypeStaticText'")).click();
+        //Can use regular expressions for PredicateString
+        /* driver.findElement(AppiumBy.iOSNsPredicateString(
+                "value BEGINSWITH[c] 'Confirm' AND type == 'XCUIElementTypeStaticText'")).click();*/
+        driver.findElement(AppiumBy.iOSNsPredicateString(
+                "label == 'Confirm'"))
+                .click();
     }
 }
