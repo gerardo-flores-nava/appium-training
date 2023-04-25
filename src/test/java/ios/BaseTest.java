@@ -30,10 +30,10 @@ public class BaseTest {
         //Appium Code -> Appium Server -> Mobile
         XCUITestOptions options = new XCUITestOptions();
         options.setDeviceName("iPhone 14 Pro Max");
-        /*options.setApp(
-                "//Users//gerardoalbertofloresnava//IdeaProjects//AppiumTraining//src//test//resources//UIKitCatalog.app");*/
         options.setApp(
-                "//Users//gerardoalbertofloresnava//IdeaProjects//AppiumTraining//src//test//resources//TestApp 3.app");
+                "//Users//gerardoalbertofloresnava//IdeaProjects//AppiumTraining//src//test//resources//UIKitCatalog.app");
+        /*options.setApp(
+                "//Users//gerardoalbertofloresnava//IdeaProjects//AppiumTraining//src//test//resources//TestApp 3.app");*/
         options.setPlatformVersion("16.4");
         options.setUdid("CA751901-10CA-4BEC-86F8-2C875CB2403B");
         options.setWdaLaunchTimeout(Duration.ofSeconds(20));
